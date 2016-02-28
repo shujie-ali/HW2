@@ -15,3 +15,7 @@
 /log/*
 !/log/.keep
 /tmp
+<<<<<<< HEAD
+=======
+log
+>>>>>>> acd6bb2bbdbbe808b22c126ddfa908cf8f41f11d
