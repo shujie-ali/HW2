@@ -5,6 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+<<<<<<< HEAD
+=======
 
 movies = [{:title => 'Aladdin', :rating => 'G', :release_date => '25-Nov-1992'},
     	  {:title => 'The Terminator', :rating => 'R', :release_date => '26-Oct-1984'},
@@ -21,3 +23,4 @@ movies = [{:title => 'Aladdin', :rating => 'G', :release_date => '25-Nov-1992'},
 movies.each do |movie|
   Movie.create!(movie)
 end
+>>>>>>> acd6bb2bbdbbe808b22c126ddfa908cf8f41f11d

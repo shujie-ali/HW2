@@ -4,6 +4,15 @@
 # It gets overwritten when you run the `spring binstub` command.
 
 unless defined?(Spring)
+<<<<<<< HEAD
+  require 'rubygems'
+  require 'bundler'
+
+  if (match = Bundler.default_lockfile.read.match(/^GEM$.*?^    (?:  )*spring \((.*?)\)$.*?^$/m))
+    Gem.paths = { 'GEM_PATH' => [Bundler.bundle_path.to_s, *Gem.path].uniq }
+    gem 'spring', match[1]
+    require 'spring/binstub'
+=======
   require "rubygems"
   require "bundler"
 
@@ -11,5 +20,6 @@ unless defined?(Spring)
     Gem.paths = { "GEM_PATH" => [Bundler.bundle_path.to_s, *Gem.path].uniq }
     gem "spring", match[1]
     require "spring/binstub"
+>>>>>>> acd6bb2bbdbbe808b22c126ddfa908cf8f41f11d
   end
 end
